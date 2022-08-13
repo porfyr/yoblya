@@ -1,0 +1,4 @@
+Шоб скласти свою asm прогу, використовуй мітку start і ці команди
+
+nasm -f macho64 another.asm
+ld another.o -o another -macosx_version_min 10.14 -static

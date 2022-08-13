@@ -1,0 +1,35 @@
+Moskvych Leonida
+450
+1986
+10
+8.8
+
+Belaz Stepana
+24000000
+2013
+1300
+650
+
+Zhyhul' Nykyfora
+300
+1988
+10.3
+9.5
+
+Nyva Porfyra
+400
+1985
+10.5
+8.7
+
+Volha Todosa
+600
+1987
+13.5
+10.3
+
+Zaporozhets' Vasylya
+350
+2077
+5.9
+5.5
