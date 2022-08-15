@@ -1,0 +1,1 @@
+char ** sts = new char *[100];
