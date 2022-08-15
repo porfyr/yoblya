@@ -6,7 +6,7 @@ int main()
     printf("hi mom\n");
 
     if (1) {
-        printf("no\n"); 
+        printf("гатово\n"); 
     }
 
     return 0;
