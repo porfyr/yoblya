@@ -11,8 +11,8 @@ func reply_markup() (
 		"Так!", false, false, *KeyboardButtonPollType{""}, WebAppInfo{""}
 	}
 
-	itemsSel := [][]tgbotapi.KeyboardButton{knopka}
-	itemsSel = append(itemsSel, []tgbotapi.KeyboardButton{})
+	itemsSel := [][]tgbotapi.KeyboardButton{}
+	itemsSel = append(itemsSel, knopka)
 	msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Select item")
 
 	msg.ReplyMarkup = &tgbotapi.ReplyKeyboardMarkup{
@@ -44,8 +44,8 @@ func main() {
 	for update := range updates {
 		if update.Message != nil { // If we got a message
 
-			
-			
+			reply_markup()
+
 		}
 	}
 }
