@@ -1,7 +1,7 @@
 #include <iostream>
 
 
-int main()
+int sth_needed()
 {
     int ************a = new int***********[1];
     a[0] = new int**********[1];
@@ -16,6 +16,13 @@ int main()
     a[0][0][0][0][0][0][0][0][0][0] = new int*[1];
     a[0][0][0][0][0][0][0][0][0][0][0] = new int[1];
     a[0][0][0][0][0][0][0][0][0][0][0][0] = 69;
+
+    return a;
+}
+
+int main()
+{
+    std::cout << a << std::endl;
 
     return 0;
 }
