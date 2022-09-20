@@ -3,8 +3,11 @@
 
 int main()
 {
-    Book nigga = Book("Євтимій вухоляп", "Василь Колісник", 45, 70);
-    nigga.getBook();
+    Book lystok = Book("Євтимій вухоляп", "Василь Колісник", 45, 70);
+    lystok.getBook();
+
+    Book papirus(lystok);
+    papirus.getBook();
 
     return 0;
 }
