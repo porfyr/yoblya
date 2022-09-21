@@ -1,0 +1,69 @@
+:root {
+    --scape_width: 350px;
+}
+
+.wrapper {
+    margin: 50px auto;
+
+    width: 50%;
+    width: var(--scape_width, width);
+    height: var(--scape_width);
+
+    display: grid;
+    border-style: solid;
+    border-color: red;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2px;
+}
+.wrapper > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: black;
+}
+
+#b1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+#b2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+#b3 {
+    grid-column: 3 / 3;
+    grid-row: 1 / 2;
+}
+#b4 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+#b5 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+#b6 {
+    grid-column: 3 / 3;
+    grid-row: 2 / 3;
+}
+#b7 {
+    grid-column: 1 / 2;
+    grid-row: 3;
+}
+#b8 {
+    grid-column: 2 / 3;
+    grid-row: 3;
+}
+#b9 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+button {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    border: 2px;
+}
