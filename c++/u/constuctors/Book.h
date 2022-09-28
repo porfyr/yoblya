@@ -1,9 +1,11 @@
 #include <stdio.h>
 
+static const int std_length = 30;
+
 class Book
 {
     private:
-        static const int std_length = 30;           // Стандартна довжина масиву чарів
+        //;           // Стандартна довжина масиву чарів
 
         char  * name;
         char  * auth;
