@@ -10,6 +10,7 @@ int main()
     text.task_1();
     text.task_2();
     text.task_3();
+    text.task_4();
 
     return 0;
 }
