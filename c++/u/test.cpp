@@ -1,13 +1,11 @@
-#include <iostream>
-#include <cmath>
-
+#include <stdio.h>
+#include <string>
 
 int main()
 {
-    std::cout << "Введи: \n";
-    int a;
-    std::cin >> a;
-    std::cout << a << std::endl;
+    int i = 3 ? true : i = 2;
+    //i = 9;
+    printf("%d\n", i);
 
     return 0;
 }
