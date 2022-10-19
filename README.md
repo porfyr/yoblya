@@ -1,3 +1,3 @@
 # yoblya
-My proving ground
+My proving ground:
 homeworks, university projects, scatches, archive
