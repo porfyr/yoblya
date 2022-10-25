@@ -111,6 +111,6 @@ class Auto
         }
         void getCount()
         {
-            printf("В нас %d екземплярів\n", count);
+            printf("В нас екземплярів %d\n", count);
         }
 };
