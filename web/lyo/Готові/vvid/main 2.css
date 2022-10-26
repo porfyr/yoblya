@@ -1,0 +1,111 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+
+    background: rgb(148, 221, 217);
+}
+
+h1, h2, h3, h4, h5, h5 {
+    margin: 0;
+    font-weight: normal;
+}
+
+/* *,
+*:before,
+*:after {
+    box-sizing: boarder-box;
+} */
+
+/* logo title */
+.logo__title {
+    margin: 20px auto 0;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* Box */
+
+.box {
+    content: "";
+    display: block;
+    width: 800px;
+    max-width: 100%;
+    height: fit-content;
+
+    margin: 25px auto;
+    padding-top: 30px;
+    padding-bottom: 15px;
+
+    background: #fff;
+    border-radius: 5px;
+
+    text-align: center;
+    font-weight: 200;
+}
+
+.box__title {
+    font-size: 20px;
+}
+
+.form {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+
+/* Лівий блок лейблів */
+.labels {
+    margin-right: 13px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+#why_provide {
+    margin-top: 30px;
+}
+
+.lebel__items {
+    margin: 0 5px 20px 0;
+    padding: 1px;
+    left: 0;
+}
+
+
+/* Правий блок інпутів */
+.inputs {
+    /* margin: 5px 0; */
+    display: flex;
+    flex-direction: column;
+}
+
+.input__simp {
+    margin: 0 100px 16px 0;
+
+    height: 20px;
+    width: 200px;
+}
+
+.inputs select {
+    width: 200px;
+    margin-bottom: 22px;
+}
+
+.form__radio {
+    font-size: 15px;
+}
+
+.radios {
+    text-align: left;
+    margin-bottom: 7px;
+}
+
+#blgaria {
+    margin-top: 10px;
+    width: 230px;
+}
