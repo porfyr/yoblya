@@ -30,6 +30,11 @@ class AbCom
         AbCom &operator= (const AbCom &other);                                       // Оператор присвоєння
         ~AbCom();
 
+        char* getName();
+        char* getServce();
+        float getDebt();
+        void swap(AbCom &other);
+
         void getObj();
         void getPrice();
         void get_isLate();

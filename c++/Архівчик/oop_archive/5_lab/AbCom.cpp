@@ -7,12 +7,25 @@ void AbCom::strcp(char * target, char * sorce)        //  Кустарне ко�
     for (int i = 0; i < std_size; i++)
         target[i] = sorce[i];
 }
+void AbCom::swap(AbCom &other)
+{
+    std::swap(this->name, other.name);
+    std::swap(this->service_name, other.service_name);
+    std::swap(this->price, other.price);
+    std::swap(this->adress, other.adress);
+    std::swap(this->regDate, other.regDate);
+    std::swap(this->dateLastCheck, other.dateLastCheck);
+    std::swap(this->size, other.size);
+    std::swap(this->dateCheck_list, other.dateCheck_list);
+    // for (int i = 0; i < this->size; i++)
+    //     std:swap(this->dateCheck_list[i], other.dateCheck_list[i]);
+    std::swap(this->debt, other.debt);
+}
 
 AbCom::AbCom()
 {
     printf("  * дефолтний конструктор AbCom %p бррр\n", this);
 }
-
 AbCom::AbCom(char * _name, char * _service_name, float _price, char * _adress,             // конструктор ініціалізації
       int _regDate, int _dateLastCheck, int _size, int * _dateCheck_list, float _debt)
 {
@@ -32,7 +45,6 @@ AbCom::AbCom(char * _name, char * _service_name, float _price, char * _adress,  
     debt = _debt;
     printf("  * Конструктор AbCom %p бррр\n", this);
 }
-
 AbCom::AbCom(const AbCom &other)                                                           // конструктор копіювання
 {
     this->name = new char[std_size];
@@ -48,7 +60,6 @@ AbCom::AbCom(const AbCom &other)                                                
     this->debt = other.debt;
     printf("  * Копіювання AbCom %p вжух\n", this);
 }
-
 AbCom &AbCom::operator= (const AbCom &other)                //  Присвоєння
 {
     if (this != &other)
@@ -72,10 +83,8 @@ AbCom &AbCom::operator= (const AbCom &other)                //  Присвоєн
             dateCheck_list[i] = other.dateCheck_list[i];
         debt = other.debt;
     }
-    printf("Присвоєно\n");
     return *this;
 }
-
 AbCom::~AbCom()
 {
     delete[] name;
@@ -83,6 +92,19 @@ AbCom::~AbCom()
     delete[] adress;
     delete[] dateCheck_list;
     printf("  * Деструктор AbCom %p пфф\n", this);
+}
+
+char* AbCom::getName()
+{
+    return name;
+}
+char* AbCom::getServce()
+{
+    return service_name;
+}
+float AbCom::getDebt()
+{
+    return debt;
 }
 
 void AbCom::getObj()

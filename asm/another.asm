@@ -1,5 +1,5 @@
-        global   start
-        section  .text
+global   start
+section  .text
 start
 	mov      rax, 0x02000004
         mov      rdi, 1
