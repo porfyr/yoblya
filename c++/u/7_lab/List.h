@@ -4,7 +4,7 @@
 class List
 {
     private:
-        struct Node
+        struct Node                         // Вузлова структура
         {
             int data;
             Node *pNext;
@@ -12,18 +12,23 @@ class List
             {
                 this->data = data;
                 this->pNext = pNext;
-                printf("Задефолчений конструктор Node\n");
             }
         };
         Node *head;
         int size;
     public:
-        List();
-        ~List();
-        int &operator[](const int index);
+        List();                             // Дефолтний конструктор
+        List(char *filename);               // Конструктор з файлу
+        ~List();                            // Деструктор рекурсивний
+        int &operator[](const int index);   // Оператор []
 
         int getSize() { return size; }
 
-        void push_back(int data);
-        void print();
+        void push_head(int data);           // Додати елемент з початку
+        void push_back(int data);           // Додати елем в кінець
+        void rm_head();                     // Усунути елем на початку
+        void rm_back();                     // Усунути елем в кінці
+        void rm_negatives();                // Усуває всі від'ємні елементи
+        void mv_min();                      // Переміщає найменші в кінець
+        void print();                       // Друк масиву
 };
