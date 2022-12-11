@@ -165,8 +165,9 @@ void List::mv_min()                     // Переміщає найменші �
         if (current->data <= min)
             min = current->data;
         current = current->pNext;
-    }   
-    for (int i = 0; i < 10; i++) // Га випадок якщо
+    }
+    printf("Мінімальний елемент %d\n", min);
+    for (int i = 0; i < 10; i++) // На випадок якщо
     {                           // мінімумів 10 шт))
         current = this->head;
         while (current->pNext->pNext != nullptr)
@@ -181,6 +182,13 @@ void List::mv_min()                     // Переміщає найменші �
                 }
             }
             current = current->pNext;
+        }
+    }
+    if (current->pNext->pNext == nullptr)
+    {
+        if (current->data == min)
+        {
+            std::swap(current->data, current->pNext->data);
         }
     }
 }

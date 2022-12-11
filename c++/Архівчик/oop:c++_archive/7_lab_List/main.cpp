@@ -7,7 +7,8 @@ int main()
 
     List lst("arr.txt");
     lst.print();
-    // lst.rm_negatives();          // Усуває всі від'ємні елементи
+    lst.rm_negatives();          // Усуває всі від'ємні елементи
+    lst.print();
     lst.mv_min();
     lst.print();
     // lst.push_head(1);            // Додає з кінця новий елемент
