@@ -1,7 +1,7 @@
 #include "Book.h"
 #include <stdio.h>
 
-class Book_whose : publik Book
+class Book_whose: publik Book
 {
     private:
         char owner[std_length];
